@@ -41,7 +41,7 @@ export default function Navbar() {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
     >
       {/* Background */}
-      <div className="relative bg-white border-b border-gray-200">
+      <div className="relative bg-neutral-800/95 border-b border-neutral-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo with animation */}
@@ -51,10 +51,10 @@ export default function Navbar() {
                 transition={{ duration: 0.6 }}
                 className="relative"
               >
-                <Sparkles className="w-8 h-8 text-purple-600" />
+                <Sparkles className="w-8 h-8 text-[--neon-orange]" />
               </motion.div>
               <motion.span
-                className="text-2xl font-bold text-gray-900"
+                className="text-2xl font-bold text-white"
                 whileHover={{ scale: 1.05 }}
               >
                 Brand
@@ -77,9 +77,9 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-gray-700" />
+                <X className="w-6 h-6 text-neutral-200" />
               ) : (
-                <Menu className="w-6 h-6 text-gray-700" />
+                <Menu className="w-6 h-6 text-neutral-200" />
               )}
             </motion.button>
           </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
           }}
           transition={{ duration: 0.3 }}
         >
-          <div className="px-4 py-4 space-y-2 bg-white border-t border-gray-200">
+          <div className="px-4 py-4 space-y-2 bg-neutral-800 border-t border-neutral-700">
             {navItems.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -108,7 +108,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="block px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700"
+                  className="block px-4 py-2 rounded-lg hover:bg-neutral-700 transition-colors text-neutral-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -174,7 +174,7 @@ function NavLink({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="relative z-10 text-gray-700 group-hover:text-purple-600 transition-colors font-medium">
+          <span className="relative z-10 text-neutral-200 group-hover:text-[--neon-orange] transition-colors font-medium">
             {children}
           </span>
 

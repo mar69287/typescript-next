@@ -16,11 +16,13 @@ export default function Badge({
   className = "",
 }: BadgeProps) {
   const variantStyles = {
-    default: "bg-gray-100 text-gray-800",
-    success: "bg-green-100 text-green-800",
-    warning: "bg-yellow-100 text-yellow-800",
-    error: "bg-red-100 text-red-800",
-    info: "bg-blue-100 text-blue-800",
+    default: "bg-neutral-700 text-neutral-200 border border-neutral-600",
+    success:
+      "bg-[--neon-green]/20 text-[--neon-green] border border-[--neon-green]",
+    warning:
+      "bg-[--neon-yellow]/20 text-[--neon-yellow] border border-[--neon-yellow]",
+    error: "bg-[--error-500]/20 text-[--error-500] border border-[--error-500]",
+    info: "bg-[--info-500]/20 text-[--info-500] border border-[--info-500]",
   };
 
   const sizeStyles = {

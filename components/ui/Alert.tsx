@@ -20,24 +20,26 @@ export default function Alert({
 }: AlertProps) {
   const variantStyles = {
     success: {
-      container: "bg-green-50 border-green-200 text-green-800",
+      container:
+        "bg-[--neon-green]/10 border-[--neon-green] text-[--neon-green]",
       icon: CheckCircle,
-      iconColor: "text-green-600",
+      iconColor: "text-[--neon-green]",
     },
     error: {
-      container: "bg-red-50 border-red-200 text-red-800",
+      container: "bg-[--error-500]/10 border-[--error-500] text-[--error-500]",
       icon: AlertCircle,
-      iconColor: "text-red-600",
+      iconColor: "text-[--error-500]",
     },
     warning: {
-      container: "bg-yellow-50 border-yellow-200 text-yellow-800",
+      container:
+        "bg-[--neon-yellow]/10 border-[--neon-yellow] text-[--neon-yellow]",
       icon: AlertTriangle,
-      iconColor: "text-yellow-600",
+      iconColor: "text-[--neon-yellow]",
     },
     info: {
-      container: "bg-blue-50 border-blue-200 text-blue-800",
+      container: "bg-[--info-500]/10 border-[--info-500] text-[--info-500]",
       icon: Info,
-      iconColor: "text-blue-600",
+      iconColor: "text-[--info-500]",
     },
   };
 

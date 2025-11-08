@@ -12,22 +12,23 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ label, error, helperText, className = "", ...props }, ref) => {
     const inputClasses = `
       w-full px-4 py-3 rounded-lg border transition-all
-      focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent
-      ${error ? "border-red-500" : "border-gray-300"}
+      bg-neutral-700 text-white placeholder:text-neutral-400
+      focus:outline-none focus:ring-2 focus:ring-[--neon-orange] focus:border-transparent
+      ${error ? "border-[--error-500]" : "border-neutral-600"}
       ${className}
     `.trim();
 
     return (
       <div className="w-full">
         {label && (
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium text-neutral-200 mb-2">
             {label}
           </label>
         )}
         <input ref={ref} className={inputClasses} {...props} />
-        {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
+        {error && <p className="mt-1 text-sm text-[--error-500]">{error}</p>}
         {helperText && !error && (
-          <p className="mt-1 text-sm text-gray-500">{helperText}</p>
+          <p className="mt-1 text-sm text-neutral-400">{helperText}</p>
         )}
       </div>
     );

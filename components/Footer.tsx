@@ -31,7 +31,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray-50 border-t border-gray-200">
+    <footer className="relative bg-neutral-800 border-t border-neutral-700">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
@@ -48,11 +48,11 @@ export default function Footer() {
                 whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                 transition={{ duration: 0.5 }}
               >
-                <Sparkles className="w-8 h-8 text-purple-600" />
+                <Sparkles className="w-8 h-8 text-[--neon-orange]" />
               </motion.div>
-              <span className="text-2xl font-bold text-gray-900">Brand</span>
+              <span className="text-2xl font-bold text-white">Brand</span>
             </Link>
-            <p className="text-gray-600 mb-6 max-w-md">
+            <p className="text-neutral-300 mb-6 max-w-md">
               Building the future with innovative solutions. Creating unique
               experiences that stand out from the crowd.
             </p>
@@ -65,7 +65,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white border border-gray-200 hover:border-purple-500 transition-colors group"
+                  className="p-3 rounded-full bg-neutral-700 border border-neutral-600 hover:border-[--neon-orange] hover:shadow-[0_0_15px_rgba(255,101,47,0.3)] transition-all group"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function Footer() {
                   transition={{ delay: index * 0.1 }}
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-gray-600 group-hover:text-purple-600 transition-colors" />
+                  <social.icon className="w-5 h-5 text-neutral-300 group-hover:text-[--neon-orange] transition-colors" />
                 </motion.a>
               ))}
             </div>
@@ -89,7 +89,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ delay: colIndex * 0.1 }}
             >
-              <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
                 {category}
               </h3>
               <ul className="space-y-3">
@@ -103,7 +103,7 @@ export default function Footer() {
                   >
                     <Link
                       href={link.href}
-                      className="text-gray-600 hover:text-purple-600 transition-colors inline-block group"
+                      className="text-neutral-300 hover:text-[--neon-green] transition-colors inline-block group"
                     >
                       <span className="relative">
                         {link.name}
@@ -125,27 +125,27 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <motion.div
-          className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center"
+          className="pt-8 border-t border-neutral-700 flex flex-col sm:flex-row justify-between items-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <p className="text-gray-600 text-sm mb-4 sm:mb-0 flex items-center">
+          <p className="text-neutral-400 text-sm mb-4 sm:mb-0 flex items-center">
             © {new Date().getFullYear()} Brand. All rights reserved.
           </p>
 
           <div className="flex items-center space-x-6">
             <motion.a
               href="/privacy"
-              className="text-sm text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-sm text-neutral-400 hover:text-[--neon-yellow] transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Privacy Policy
             </motion.a>
             <motion.a
               href="/terms"
-              className="text-sm text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-sm text-neutral-400 hover:text-[--neon-yellow] transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Terms of Service

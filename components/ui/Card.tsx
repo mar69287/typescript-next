@@ -25,9 +25,9 @@ export default function Card({
   };
 
   const variantStyles = {
-    default: "bg-white border border-gray-200",
-    outlined: "bg-transparent border-2 border-gray-300",
-    elevated: "bg-white shadow-lg border border-gray-100",
+    default: "bg-neutral-800 border border-neutral-700",
+    outlined: "bg-transparent border-2 border-neutral-600",
+    elevated: "bg-neutral-800 shadow-xl border border-neutral-700",
   };
 
   const baseStyles = `rounded-xl transition-all ${paddingStyles[padding]} ${variantStyles[variant]} ${className}`;

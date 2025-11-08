@@ -49,7 +49,7 @@ export default function FeatureBlob({
       />
 
       {/* Content container */}
-      <div className="relative p-8 rounded-3xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+      <div className="relative p-8 rounded-3xl border border-neutral-700 bg-neutral-800 shadow-xl hover:shadow-2xl transition-shadow">
         {/* Icon with morphing background */}
         <motion.div
           className="relative w-16 h-16 mb-6"
@@ -77,10 +77,10 @@ export default function FeatureBlob({
         </motion.div>
 
         {/* Title */}
-        <h3 className="text-2xl font-bold mb-3 text-gray-900">{title}</h3>
+        <h3 className="text-2xl font-bold mb-3 text-white">{title}</h3>
 
         {/* Description */}
-        <p className="text-gray-600 leading-relaxed">{description}</p>
+        <p className="text-neutral-300 leading-relaxed">{description}</p>
 
         {/* Animated border */}
         <motion.div

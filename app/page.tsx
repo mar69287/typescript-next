@@ -13,27 +13,27 @@ const features = [
     title: "Lightning Fast",
     description:
       "Built for speed with cutting-edge technology and optimized performance.",
-    color: "rgba(250, 204, 21, 0.8)",
+    color: "var(--neon-yellow)", // Neon yellow
   },
   {
     icon: Shield,
     title: "Secure by Default",
     description:
       "Enterprise-grade security to keep your data safe and protected.",
-    color: "rgba(34, 197, 94, 0.8)",
+    color: "var(--neon-green)", // Neon green
   },
   {
     icon: Rocket,
     title: "Scale Infinitely",
     description:
       "Grow without limits. Our platform scales with your business needs.",
-    color: "rgba(59, 130, 246, 0.8)",
+    color: "var(--info-500)", // Bright cyan
   },
   {
     icon: Code,
     title: "Developer First",
     description: "Beautiful APIs and tools designed for modern developers.",
-    color: "rgba(168, 85, 247, 0.8)",
+    color: "var(--neon-orange)", // Neon orange
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Stats Section - Diagonal Split Design */}
-      <section className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50">
+      <section className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-neutral-800">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Features Section - Flowing Layout */}
-      <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-[#272727]">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -80,10 +80,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
               Powerful Capabilities
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
               Everything you need to build and scale your next big idea
             </p>
           </motion.div>
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section - Unique Split Design */}
-      <section className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50">
+      <section className="relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-neutral-800">
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -122,10 +122,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
               Ready to Transform Your Vision?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
               Join thousands of developers and businesses already building with
               our platform
             </p>

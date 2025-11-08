@@ -55,8 +55,8 @@ export default function StatWave({
             x2="100%"
             y2="0%"
           >
-            <stop offset="0%" stopColor="rgba(147, 51, 234, 0.05)" />
-            <stop offset="100%" stopColor="rgba(147, 51, 234, 0.05)" />
+            <stop offset="0%" stopColor="rgba(20, 167, 108, 0.15)" />
+            <stop offset="100%" stopColor="rgba(255, 228, 0, 0.15)" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -76,9 +76,9 @@ export default function StatWave({
           }}
         >
           <motion.div className="relative" whileHover={{ scale: 1.2 }}>
-            <Icon className="w-10 h-10 text-purple-600" />
+            <Icon className="w-10 h-10 text-[--neon-orange]" />
             <motion.div
-              className="absolute inset-0 bg-purple-500/20 rounded-full blur-xl"
+              className="absolute inset-0 bg-[--neon-orange]/30 rounded-full blur-xl"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [0.5, 0.8, 0.5],
@@ -94,7 +94,7 @@ export default function StatWave({
 
         {/* Value */}
         <motion.div
-          className="text-5xl font-bold mb-2 text-purple-600"
+          className="text-5xl font-bold mb-2 text-[--neon-orange]"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
@@ -108,7 +108,7 @@ export default function StatWave({
         </motion.div>
 
         {/* Label */}
-        <div className="text-gray-600 font-medium text-lg">{label}</div>
+        <div className="text-neutral-300 font-medium text-lg">{label}</div>
       </div>
     </motion.div>
   );

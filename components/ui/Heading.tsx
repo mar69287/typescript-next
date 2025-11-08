@@ -26,7 +26,7 @@ export default function Heading({
 }: HeadingProps) {
   return (
     <Component
-      className={`font-bold text-gray-900 ${sizeToStyles[size]} ${className}`}
+      className={`font-bold text-white ${sizeToStyles[size]} ${className}`}
     >
       {children}
     </Component>

@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Simple background */}
-      <div className="absolute inset-0 bg-gray-50" />
+      <div className="absolute inset-0 bg-[#272727]" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
         <motion.div
@@ -41,11 +41,11 @@ export default function HeroSection() {
           {/* Badge */}
           <motion.div variants={itemVariants}>
             <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-800 border border-neutral-700 shadow-lg"
               whileHover={{ scale: 1.05 }}
             >
-              <Sparkles className="w-4 h-4 text-purple-500" />
-              <span className="text-sm font-medium text-gray-700">
+              <Sparkles className="w-4 h-4 text-[--neon-yellow]" />
+              <span className="text-sm font-medium text-neutral-200">
                 Introducing Next-Gen Platform
               </span>
             </motion.div>
@@ -56,14 +56,16 @@ export default function HeroSection() {
             variants={itemVariants}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight"
           >
-            <span className="block text-gray-900">Build Something</span>
-            <span className="block mt-2 text-purple-600">Extraordinary</span>
+            <span className="block text-white">Build Something</span>
+            <span className="block mt-2 text-[--neon-orange]">
+              Extraordinary
+            </span>
           </motion.h1>
 
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl sm:text-2xl text-neutral-300 max-w-3xl mx-auto leading-relaxed"
           >
             Experience the future of web development. Create stunning
             applications with cutting-edge technology and beautiful design.
@@ -96,9 +98,9 @@ export default function HeroSection() {
           ease: "easeInOut",
         }}
       >
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+        <div className="w-6 h-10 border-2 border-neutral-500 rounded-full flex justify-center">
           <motion.div
-            className="w-1 h-3 bg-gray-400 rounded-full mt-2"
+            className="w-1 h-3 bg-neutral-400 rounded-full mt-2"
             animate={{
               y: [0, 12, 0],
             }}

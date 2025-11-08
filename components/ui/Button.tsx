@@ -28,10 +28,11 @@ export default function Button({
     "font-semibold rounded-full transition-all duration-300 inline-flex items-center gap-2";
 
   const variantStyles = {
-    primary: "bg-purple-600 text-white hover:bg-purple-700 hover:shadow-lg",
+    primary:
+      "bg-[--neon-orange] text-white hover:bg-[--primary-600] hover:shadow-[0_0_20px_rgba(255,101,47,0.5)] shadow-md",
     secondary:
-      "border-2 border-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-600",
-    ghost: "text-gray-700 hover:text-purple-600",
+      "border-2 border-[--neon-green] text-[--neon-green] hover:bg-[--neon-green] hover:text-white hover:shadow-[0_0_20px_rgba(20,167,108,0.4)] transition-all",
+    ghost: "text-neutral-200 hover:text-[--neon-yellow] transition-colors",
   };
 
   const sizeStyles = {
