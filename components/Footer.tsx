@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Twitter, Linkedin, Mail, Heart, Sparkles } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const footerLinks = {
