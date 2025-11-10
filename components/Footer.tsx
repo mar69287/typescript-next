@@ -48,7 +48,7 @@ export default function Footer() {
                 whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                 transition={{ duration: 0.5 }}
               >
-                <Sparkles className="w-8 h-8 text-[--neon-orange]" />
+                <Sparkles className="w-8 h-8 text-primary" />
               </motion.div>
               <span className="text-2xl font-bold text-white">Brand</span>
             </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-neutral-700 border border-neutral-600 hover:border-[--neon-orange] hover:shadow-[0_0_15px_rgba(255,101,47,0.3)] transition-all group"
+                  className="p-3 rounded-full bg-neutral-700 border border-neutral-600 hover:border-primary hover:shadow-[0_0_15px_rgba(255,101,47,0.3)] transition-all group"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function Footer() {
                   transition={{ delay: index * 0.1 }}
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-neutral-300 group-hover:text-[--neon-orange] transition-colors" />
+                  <social.icon className="w-5 h-5 text-neutral-300 group-hover:text-primary transition-colors" />
                 </motion.a>
               ))}
             </div>
@@ -103,7 +103,7 @@ export default function Footer() {
                   >
                     <Link
                       href={link.href}
-                      className="text-neutral-300 hover:text-[--neon-green] transition-colors inline-block group"
+                      className="text-neutral-300 hover:text-secondary transition-colors inline-block group"
                     >
                       <span className="relative">
                         {link.name}
@@ -138,14 +138,14 @@ export default function Footer() {
           <div className="flex items-center space-x-6">
             <motion.a
               href="/privacy"
-              className="text-sm text-neutral-400 hover:text-[--neon-yellow] transition-colors"
+              className="text-sm text-neutral-400 hover:text-accent transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Privacy Policy
             </motion.a>
             <motion.a
               href="/terms"
-              className="text-sm text-neutral-400 hover:text-[--neon-yellow] transition-colors"
+              className="text-sm text-neutral-400 hover:text-accent transition-colors"
               whileHover={{ scale: 1.05 }}
             >
               Terms of Service

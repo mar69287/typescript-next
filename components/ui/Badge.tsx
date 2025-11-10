@@ -17,12 +17,10 @@ export default function Badge({
 }: BadgeProps) {
   const variantStyles = {
     default: "bg-neutral-700 text-neutral-200 border border-neutral-600",
-    success:
-      "bg-[--neon-green]/20 text-[--neon-green] border border-[--neon-green]",
-    warning:
-      "bg-[--neon-yellow]/20 text-[--neon-yellow] border border-[--neon-yellow]",
-    error: "bg-[--error-500]/20 text-[--error-500] border border-[--error-500]",
-    info: "bg-[--info-500]/20 text-[--info-500] border border-[--info-500]",
+    success: "bg-success/20 text-success border border-success",
+    warning: "bg-warning/20 text-warning border border-warning",
+    error: "bg-error/20 text-error border border-error",
+    info: "bg-info/20 text-info border border-info",
   };
 
   const sizeStyles = {

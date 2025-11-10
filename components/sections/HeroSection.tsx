@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Simple background */}
-      <div className="absolute inset-0 bg-[#272727]" />
+      <div className="absolute inset-0 bg-background" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
         <motion.div
@@ -44,7 +44,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-800 border border-neutral-700 shadow-lg"
               whileHover={{ scale: 1.05 }}
             >
-              <Sparkles className="w-4 h-4 text-[--neon-yellow]" />
+              <Sparkles className="w-4 h-4 text-accent" />
               <span className="text-sm font-medium text-neutral-200">
                 Introducing Next-Gen Platform
               </span>
@@ -57,9 +57,7 @@ export default function HeroSection() {
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight"
           >
             <span className="block text-white">Build Something</span>
-            <span className="block mt-2 text-[--neon-orange]">
-              Extraordinary
-            </span>
+            <span className="block mt-2 text-primary">Extraordinary</span>
           </motion.h1>
 
           {/* Description */}

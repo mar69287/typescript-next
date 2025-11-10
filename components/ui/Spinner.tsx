@@ -14,7 +14,7 @@ export default function Spinner({ size = "md", className = "" }: SpinnerProps) {
 
   return (
     <div
-      className={`inline-block ${sizeStyles[size]} border-[--neon-orange] border-t-transparent rounded-full animate-spin ${className}`}
+      className={`inline-block ${sizeStyles[size]} border-primary border-t-transparent rounded-full animate-spin ${className}`}
       role="status"
       aria-label="Loading"
     >

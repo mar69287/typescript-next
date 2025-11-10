@@ -13,8 +13,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     const inputClasses = `
       w-full px-4 py-3 rounded-lg border transition-all
       bg-neutral-700 text-white placeholder:text-neutral-400
-      focus:outline-none focus:ring-2 focus:ring-[--neon-orange] focus:border-transparent
-      ${error ? "border-[--error-500]" : "border-neutral-600"}
+      focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+      ${error ? "border-error" : "border-neutral-600"}
       ${className}
     `.trim();
 
@@ -26,7 +26,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           </label>
         )}
         <input ref={ref} className={inputClasses} {...props} />
-        {error && <p className="mt-1 text-sm text-[--error-500]">{error}</p>}
+        {error && <p className="mt-1 text-sm text-error">{error}</p>}
         {helperText && !error && (
           <p className="mt-1 text-sm text-neutral-400">{helperText}</p>
         )}

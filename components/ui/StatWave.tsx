@@ -76,9 +76,9 @@ export default function StatWave({
           }}
         >
           <motion.div className="relative" whileHover={{ scale: 1.2 }}>
-            <Icon className="w-10 h-10 text-[--neon-orange]" />
+            <Icon className="w-10 h-10 text-primary" />
             <motion.div
-              className="absolute inset-0 bg-[--neon-orange]/30 rounded-full blur-xl"
+              className="absolute inset-0 bg-primary/30 rounded-full blur-xl"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [0.5, 0.8, 0.5],
@@ -94,7 +94,7 @@ export default function StatWave({
 
         {/* Value */}
         <motion.div
-          className="text-5xl font-bold mb-2 text-[--neon-orange]"
+          className="text-5xl font-bold mb-2 text-primary"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}

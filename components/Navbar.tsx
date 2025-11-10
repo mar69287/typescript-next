@@ -51,7 +51,7 @@ export default function Navbar() {
                 transition={{ duration: 0.6 }}
                 className="relative"
               >
-                <Sparkles className="w-8 h-8 text-[--neon-orange]" />
+                <Sparkles className="w-8 h-8 text-primary" />
               </motion.div>
               <motion.span
                 className="text-2xl font-bold text-white"
@@ -174,7 +174,7 @@ function NavLink({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="relative z-10 text-neutral-200 group-hover:text-[--neon-orange] transition-colors font-medium">
+          <span className="relative z-10 text-neutral-200 group-hover:text-primary transition-colors font-medium">
             {children}
           </span>
 

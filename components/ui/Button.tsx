@@ -29,10 +29,10 @@ export default function Button({
 
   const variantStyles = {
     primary:
-      "bg-[--neon-orange] text-white hover:bg-[--primary-600] hover:shadow-[0_0_20px_rgba(255,101,47,0.5)] shadow-md",
+      "bg-primary text-white hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(255,101,47,0.5)] shadow-md",
     secondary:
-      "border-2 border-[--neon-green] text-[--neon-green] hover:bg-[--neon-green] hover:text-white hover:shadow-[0_0_20px_rgba(20,167,108,0.4)] transition-all",
-    ghost: "text-neutral-200 hover:text-[--neon-yellow] transition-colors",
+      "border-2 border-secondary text-secondary hover:bg-secondary hover:text-white hover:shadow-[0_0_20px_rgba(20,167,108,0.4)] transition-all",
+    ghost: "text-neutral-200 hover:text-accent transition-colors",
   };
 
   const sizeStyles = {

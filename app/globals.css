@@ -77,36 +77,25 @@
   --neutral-700: #404040;
   --neutral-800: #2a2a2a;
   --neutral-900: #1a1a1a;
-
-  /* Special Colors */
-  --neon-orange: #ff652f;
-  --neon-green: #14a76c;
-  --neon-yellow: #ffe400;
-
-  /* Legacy names for compatibility */
-  --purple: #a855f7;
-  --yellow: #ffe400;
 }
 
 @theme {
-  /* Colors - These become bg-primary, text-accent, etc. */
-  --color-primary: var(--primary-500);
-  --color-primary-hover: var(--primary-600);
-  --color-accent: var(--accent-500);
-  --color-accent-hover: var(--accent-600);
-  --color-success: var(--success-500);
-  --color-warning: var(--warning-500);
-  --color-error: var(--error-500);
-  --color-info: var(--info-500);
+  /* Brand Colors - Semantic naming for easy theme changes */
+  --color-primary: #ff652f; /* Neon Orange - main brand color, primary CTAs */
+  --color-primary-hover: #ff4d0f; /* Darker orange - hover state */
+  --color-secondary: #14a76c; /* Neon Green - secondary actions, success states */
+  --color-secondary-hover: #109960; /* Darker green - hover state */
+  --color-accent: #ffe400; /* Neon Yellow - highlights, warnings, special emphasis */
 
-  /* Named neon colors for easy access */
-  --color-neon-orange: var(--neon-orange);
-  --color-neon-green: var(--neon-green);
-  --color-neon-yellow: var(--neon-yellow);
+  /* Semantic Colors */
+  --color-success: #14a76c; /* Green - success messages */
+  --color-warning: #ffe400; /* Yellow - warning messages */
+  --color-error: #ff4d4d; /* Red - error messages, destructive actions */
+  --color-info: #00bcd4; /* Cyan - informational messages */
 
-  /* Backgrounds */
-  --color-dark: #272727;
-  --color-dark-lighter: #2a2a2a;
+  /* Background & Text */
+  --color-background: #272727; /* Dark charcoal - main page background */
+  --color-foreground: #ffffff; /* White - primary text color */
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);

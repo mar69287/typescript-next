@@ -13,27 +13,27 @@ const features = [
     title: "Lightning Fast",
     description:
       "Built for speed with cutting-edge technology and optimized performance.",
-    color: "var(--neon-yellow)", // Neon yellow
+    color: "var(--color-accent)", // Accent yellow
   },
   {
     icon: Shield,
     title: "Secure by Default",
     description:
       "Enterprise-grade security to keep your data safe and protected.",
-    color: "var(--neon-green)", // Neon green
+    color: "var(--color-secondary)", // Secondary green
   },
   {
     icon: Rocket,
     title: "Scale Infinitely",
     description:
       "Grow without limits. Our platform scales with your business needs.",
-    color: "var(--info-500)", // Bright cyan
+    color: "var(--color-info)", // Info cyan
   },
   {
     icon: Code,
     title: "Developer First",
     description: "Beautiful APIs and tools designed for modern developers.",
-    color: "var(--neon-orange)", // Neon orange
+    color: "var(--color-primary)", // Primary orange
   },
 ];
 
@@ -45,7 +45,7 @@ const stats = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="">
       <HeroSection />
 
       {/* Stats Section - Diagonal Split Design */}
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Features Section - Flowing Layout */}
-      <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-[#272727]">
+      <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
