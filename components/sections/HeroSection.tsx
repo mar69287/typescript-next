@@ -27,7 +27,7 @@ const itemVariants = {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 -mt-20 py-4">
       {/* Simple background */}
       <div className="absolute inset-0 bg-background" />
 
